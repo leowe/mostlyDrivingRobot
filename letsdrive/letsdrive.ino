@@ -7,8 +7,8 @@ int pwmPinLeft = 3; // PWM output pin for motor 1
 int dirPinLeft1 = 2; // direction output pin for motor 1
 int dirPinLeft2 = 4; // direction output pin for motor 1
 int pwmPinRight = 5;
-int dirPinRight1 = 8;
-int dirPinRight2 = 9;
+int dirPinRight1 = 6;
+int dirPinRight2 = 7;
 
 
 void setup() {
@@ -98,3 +98,5 @@ void setPwmFrequency(int pin, int divisor) {
     TCCR2B = TCCR2B & 0b11111000 | mode;
   }
 }
+
+
